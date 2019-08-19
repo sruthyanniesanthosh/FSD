@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display the string with maximum length</title>
+</head>
+<script>
+function leng(){
+    var str=document.getElementById("inp").value;
+    var temp=[];
+    temp=str.split(" ");
+    var len=temp.length;
+    //alert(len);
+    var l1;
+    var max=0;
+    l1=temp[0].length;
+    var l2;
+    //alert(temp[0]);
+    var i;
+    for( i=1;i<len;i++)
+    {
+        l2=temp[i].length;
+        if(l1<l2)
+         max=i;
+         l1=l2;
+    }
+      
+    alert(temp[max]);
+
+}
+</script>
+<body>
+    Enter a string :
+    <input type="text" id="inp">
+    <button onclick="leng()">Submit</button>
+</body>
+</html>

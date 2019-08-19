@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display first letter of each string in uppercase</title>
+</head>
+<script>
+    function upper(){
+        var str=document.getElementById("inp").value;
+        var temp=[];
+        temp=str.split(" ");
+        var len=temp.length;
+        var newstr=[];
+        for(var i=0;i<len;i++){
+         temp[i]=temp[i][0].toUpperCase()+temp[i].substr(1);
+        }
+        temp=temp.join(" ")
+        alert(temp);
+
+    }
+</script>
+<body>
+        Enter a string :
+        <input type="text" id="inp">
+        <button onclick="upper()">Submit</button>
+</body>
+</html>

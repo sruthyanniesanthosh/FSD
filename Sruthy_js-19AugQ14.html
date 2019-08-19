@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String starting with specified string</title>
+</head>
+<script>
+    function start(){
+        var str=document.getElementById("inp").value;
+        var sub_str=document.getElementById("inp1").value;
+        var regexp=new RegExp(("^"+sub_str));
+        console.log(regexp)
+        
+        if(str.match(regexp))
+        alert("String starts with substring");
+        else
+        alert("String does not start with substring")
+    }
+</script>
+<body>
+        Enter a string : <br>
+        <input type="text" id="inp"><br>
+        Enter starting string:<br>
+        <input type="text" id="inp1">
+        <button onclick="start()">Submit</button>
+</body>
+</html>

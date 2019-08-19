@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Uppercase at index</title>
+</head>
+<script>
+function upper(){
+    var str=document.getElementById("inp").value;
+   var c=document.getElementById("index").value;
+   var character=str.charAt(c);
+   if(character===character.toUpperCase())
+   alert("The character is in uppercase");
+   else
+   alert("The character is not in uppercase")
+}
+</script>
+<body>
+        Enter a string : <br>
+        <input type="text" id="inp"><br>
+        Enter index value:<br>
+        <input type="text" id="index">
+        <button onclick="upper()">Submit</button>
+</body>
+</html>

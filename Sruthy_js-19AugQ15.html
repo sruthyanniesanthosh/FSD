@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Highlight string using button click</title>
+</head>
+<script>
+   
+
+    function color(){
+        var elt=document.getElementsByTagName("b");
+        for(var i=0;i<elt.length;i++)
+        elt[i].style.backgroundColor="yellow";
+    
+    }
+</script>
+<body>
+    <p>
+        <b>Hello,</b>  my name is<b>Sruthy.</b>
+        <br>I am from <b>Kerala.</b>
+
+    </p>
+    <button onclick="color()">Click Here</button>
+</body>
+</html>

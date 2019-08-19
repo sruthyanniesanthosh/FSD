@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display Current Date and Time</title>
+</head>
+<script>
+function dateTime(){
+var today = new Date();
+var day=today.getDay();
+var weekday=[];
+weekday[0] =  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+document.getElementById("p1").innerHTML=weekday[day];
+  var hours = today.getHours();
+
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; 
+
+var time = hours + ":" + today.getMinutes() + ":" + today.getSeconds()+ampm;
+document.getElementById("p2").innerHTML=time;
+}
+</script>
+<body>
+  <p id="p1"> Today: </p>
+  <p id="p2"> Time is: </p>
+   <button onclick="dateTime()">Get Time and Day</button>
+</body>
+</html>

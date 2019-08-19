@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Return string in alphabetical order</title>
+</head>
+<script>
+    function alp(){
+        var str=document.getElementById("inp").value;
+        var alp=str.split("").sort().join("");
+        alert(alp);
+    }
+</script>
+<body>
+    Enter a string :
+    <input type="text" id="inp">
+    <button onclick="alp()">Submit</button>
+</body>
+</html>

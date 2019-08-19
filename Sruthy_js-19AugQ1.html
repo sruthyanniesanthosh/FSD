@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess the random number</title>
+</head>
+<script>
+    function myFun(){
+   // var random = Math.random( ); 
+   // document.write("Random Number Generated : " + random );
+    var min=1; 
+    var max=15;  
+    var random =Math.floor( Math.random() * (+max - +min) + +min); 
+    //document.write("Random Number Generated : " + random ); 
+    var inp=document.getElementById("n1").value;
+    // if(inp<min || inp>max)
+    //     alert("Incorrect input");
+    //     else{
+    if(inp===random)
+    alert("The guess is correct");
+    else
+    alert("The guess is incorrect");
+    }
+// }
+
+</script>
+<body>
+    
+    Enter Number between 1 and 15:
+    <br><input type="number" name="" id="n1">
+    <button onclick="myFun()">Submit</button>
+</body>
+</html>

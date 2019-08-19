@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display non-repeating character in string</title>
+</head>
+<script>
+    function nonrepeating(){
+   var str=document.getElementById("inp").value;
+   var c;
+   for (var i = 0; i < str.length; i++) {
+     c = str.charAt(i);
+    if (str.indexOf(c) == i && str.indexOf(c, i + 1) == -1) {
+      alert("The non-repeating character: "+c);
+    }
+  }
+
+
+  // alert("The non repeating character is:"+non);
+
+    }
+</script>
+<body>
+        Enter a string :
+        <input type="text" id="inp">
+        <button onclick="nonrepeating()">Submit</button>
+</body>    
+</body>
+</html>

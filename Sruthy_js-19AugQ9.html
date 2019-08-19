@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merge two arrays without duplication</title>
+</head>
+<script>
+    function merge(array1,array2){
+      var array3=array1.concat(array2);
+      var array4=[];
+      
+      for(var i=0;i<array3.length;i++){
+          c=array3[i];
+        if (array3.indexOf(c) == i && array3.indexOf(c, i + 1) == -1) {
+        array4.push(c);
+    }
+          }
+    
+    alert(array4);
+    }
+
+
+    var array1=[1,2,3];
+    var array2=[3,4,5,6];
+    merge(array1,array2);
+</script>
+<body>
+    
+</body>
+</html>
