@@ -8,22 +8,17 @@
 </head>
 <script>
     function myFun(){
-   // var random = Math.random( ); 
-   // document.write("Random Number Generated : " + random );
     var min=1; 
     var max=15;  
     var random =Math.floor( Math.random() * (+max - +min) + +min); 
-    //document.write("Random Number Generated : " + random ); 
     var inp=document.getElementById("n1").value;
-    // if(inp<min || inp>max)
-    //     alert("Incorrect input");
-    //     else{
+   
     if(inp===random)
     alert("The guess is correct");
     else
     alert("The guess is incorrect");
     }
-// }
+
 
 </script>
 <body>
