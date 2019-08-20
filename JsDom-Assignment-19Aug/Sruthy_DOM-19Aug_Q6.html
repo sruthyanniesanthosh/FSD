@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generate textboxes based on user input</title>
+    <script>
+            function generate() {
+        
+                var a = parseInt(document.getElementById("box").value);
+                var ch = document.getElementById("ch");
+        
+                for (i = 0; i < a; i++) {
+                    var input = document.createElement("input");
+                    
+                    ch.appendChild(input);
+                }
+            }
+            </script>
+</head>
+<body>
+        
+        <form>
+            No. of Textboxes to be included
+            <br>
+            <input type="text" id="box" />
+            <input type="button" value="Submit" onclick="generate()" />
+            
+            <div id="ch"><br></div>
+        </form>
+</body>
+</html>

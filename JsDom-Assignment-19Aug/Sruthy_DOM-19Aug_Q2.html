@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prompt Input from user and replace body content</title>
+</head>
+<style>
+    #demo {
+              font-family:Verdana; 
+             font-size:24px;
+             color:black;
+             background-color:aqua;
+             margin:0px auto;
+    }
+    </style>
+<script>
+function myFunction() {
+  var person = prompt("Please enter your name", "Name");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+
+
+</script>
+<body>
+    <p>Click the button to demonstrate the prompt box.</p>
+
+    <button onclick="myFunction()">Click Here</button>
+    
+    <p id="demo">Hello name ! How are you today?</p>
+     
+</body>
+</html>

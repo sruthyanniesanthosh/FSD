@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remove selected option from combo-dropdown</title>
+
+<script>
+    function removeOption() {
+  var x = document.getElementById("remove");
+  x.remove(x.selectedIndex);
+}
+</script>
+</head>
+<body>
+    <form>
+        <select id="remove">
+          <option>LAPTOPS</option>
+          <option>Dell</option>
+          <option>HP</option>
+          <option>Lenovo</option>
+        </select>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br>
+        
+
+        <input type="button" onclick="removeOption()" value="Remove the selected option">
+        </form>
+</body>
+</html>

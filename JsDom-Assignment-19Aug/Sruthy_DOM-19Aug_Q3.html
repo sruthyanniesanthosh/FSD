@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch and display the href attribute value of last link </title>
+    <script>
+        function href() {
+  var x = document.getElementById("myAnchor").href;
+  console.log(x);
+  document.getElementById("demo").innerHTML = x;
+}
+    
+    </script>
+</head>
+<body>
+        <p><a id="myAnchor1" href="Sruthy_DOM-19Aug_Q1.html">JavaScript and HTML DOM Reference-Q1
+
+        </a></p>
+        <p><a id="myAnchor2" href="Sruthy_DOM-19Aug_Q2.html">JavaScript and HTML DOM Reference-Q2
+
+        </a></p>
+        <p><a id="myAnchor" href="Sruthy_DOM-19Aug_Q6.html">JavaScript and HTML DOM Reference-Q6
+
+        </a></p>
+
+        <p>Click the button to display the value of the href attribute of the link above.</p>
+        
+        <button onclick="href()">Click Here</button>
+        
+        <p id="demo"></p>
+        
+</body>
+</html>

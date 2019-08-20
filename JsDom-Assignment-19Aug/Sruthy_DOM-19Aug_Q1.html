@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch Last Modified date and time</title>
+</head>
+<script>
+function Fetch() {
+  var x = document.lastModified;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+<body>
+    
+    <p>Click the button to display the date and time this document was last modified.</p>
+
+    <button onclick="Fetch()">Click Here</button>
+    
+    <p id="demo"></p>
+    
+
+</body>
+</html>
