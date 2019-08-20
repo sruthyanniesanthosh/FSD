@@ -7,7 +7,9 @@
     <title>Fetch and display the href attribute value of last link </title>
     <script>
         function href() {
-  var x = document.getElementById("myAnchor").href;
+            var len=document.links.length;
+
+  var x = document.links[len-1].href;
   console.log(x);
   document.getElementById("demo").innerHTML = x;
 }
