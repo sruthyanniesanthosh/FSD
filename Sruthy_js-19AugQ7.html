@@ -8,27 +8,15 @@
 </head>
 <script>
  
-    function count(str,sub_str){
-    
-
-
-    }
-
-    function countsub(){
+     function countsub(){
         var str=document.getElementById("inp").value;
         var count=0;
         substring=document.getElementById("inp1").value;
         var regexp=new RegExp(substring,"g");
-
-        //count1=count(str,"ba");
         var t=str.includes(substring);
         if(t){
-        //alert(str.count(substring));
-        //alert(count1);
-        var count = (str.match(regexp) ).length;
-       
-        //var count = (str.search(regexp)).length;
-            alert("The no of occurances of substr:"+count);
+          var count = (str.match(regexp) ).length;
+          alert("The no of occurances of substr:"+count);
         }
         else
         {alert("Substring not found")}
